@@ -57,13 +57,18 @@ public class Main {
         int[] reverseFullName = generateRandomArray();
         char[] name = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
 
-        for(int i = 0; i < name.length / 2; i++){
+        /*for(int i = 0; i < name.length / 2; i++){
             char temp = name[i];
             name[i] = name[name.length - i - 1];
             name[name.length - i - 1] = temp;
+        }*/
+
+        for(int i = name.length - 1; i >= 0; i--){
+            System.out.print(name[i]);
         }
 
-        System.out.println(String.valueOf(name));
+
+       // System.out.println(String.valueOf(name));
     }
 }
 
